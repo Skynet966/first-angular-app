@@ -11,7 +11,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  resetUsernameOnBtnClick = () => {
-    if (this.username) this.username = '';
-  };
+  // resetUsernameOnBtnClick = () => {
+  //   if (this.username) this.username = '';
+  // };
 }
