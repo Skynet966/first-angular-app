@@ -9,4 +9,5 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
+  .then(success => console.log('Angular App is running seemlessly!!',success))
   .catch(err => console.error(err));
