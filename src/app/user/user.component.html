@@ -4,4 +4,4 @@
 <div class="card-container">
   <p class='inline'><strong>Username :: </strong>{{username}}</p>
 </div>
-<button class="btn btn-danger" (click)='resetUsernameOnBtnClick()'>Reset Username</button>
+<button class="btn btn-danger" (click)="username=''" [disabled]="!username">Reset Username</button>
