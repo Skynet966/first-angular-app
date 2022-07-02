@@ -14,6 +14,7 @@ export class ServerComponent implements OnInit {
   deleteServer: boolean = false;
   serverCreationStatus: string = 'No server was created!!';
   serverName: string = 'XFCR32';
+  serverCreated: boolean = false;
   getServerStatus() {
     return this.serverStatus;
   }
@@ -27,6 +28,7 @@ export class ServerComponent implements OnInit {
   onCreateNewServer = () => {
     this.serverCreationStatus =
       this.serverName + ' Server was created successfully!!';
+    this.serverCreated = true;
   };
 
   onUpdateServerName = (event: Event) => {
