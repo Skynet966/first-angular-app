@@ -11,6 +11,7 @@
   <p>No server was created yet!!</p>
 </ng-template>
 <hr>
-<p class="lead">
+<p class="lead" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{wtc: serverStatus === 'online'}">
   {{ "Server" }} with ID {{ serverId }} is {{ getServerStatus() }}.
 </p>
+<p *ngFor="let server of servers">{{server}} created successfully!!</p>
