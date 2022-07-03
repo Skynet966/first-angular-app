@@ -13,7 +13,7 @@
 </div>
 <div class="container">
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let timestamplog of timestampLogs" [ngClass]="{bg__blue: isEnoughLogs()}">
+    <li class="list-group-item" *ngFor="let timestamplog of timestampLogs; let i = index" [ngClass]="{bg__blue: i>=5}">
       <span class="badge">{{timestamplog.timestamp}}</span>
       Button turned {{timestamplog.status?'on':'off'}} at this timestamp --------------->
     </li>
