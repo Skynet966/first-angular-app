@@ -13,7 +13,17 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, RecipesComponent, RecipesListComponent, RecipesDetailsComponent, RecipesItemComponent, ShoppingListComponent, ShoppingEditComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    RecipesComponent,
+    RecipesListComponent,
+    RecipesDetailsComponent,
+    RecipesItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+  ],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
